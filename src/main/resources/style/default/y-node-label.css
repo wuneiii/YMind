@@ -1,0 +1,62 @@
+.yNodeLabel {
+    -fx-alignment: center;
+    -fx-spacing: 2px;
+}
+
+.yNodeLabel > StackPane {
+    -fx-background-color: #f1f1f1;
+    -fx-background-radius: 3px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 3px;
+    -fx-alignment: center;
+    /**
+    加号和左边label之间的距离
+     */
+}
+
+
+.yNodeLabel > StackPane > .label {
+    -fx-alignment: center;
+    -fx-padding: 3px;
+    -fx-text-fill: #444;
+    -fx-wrap-text: true;
+    -fx-max-width: 100px;
+}
+
+.yNodeLabel > StackPane > .label:hover {
+    -fx-text-fill: red;
+    -fx-cursor: hand;
+}
+
+.yNodeLabel > StackPane > .text-field {
+    -fx-wrap-text: true;
+    -fx-border-width: 0px;
+    -fx-border-color: #444;
+    -fx-alignment: center;
+    -fx-background-color: yellow;
+    -fx-max-width: 100px;
+}
+
+.yNodeLabel > .plusButton {
+    -fx-padding: 0;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-max-height: 15px;
+    -fx-max-width: 15px;
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-background-color: #f1f1f1;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #f1f1f1;
+    -fx-fill: #ddd;
+    -fx-text-fill: #ddd;
+
+}
+
+.yNodeLabel > .plusButton:hover {
+    -fx-border-color: #ccc;
+    -fx-fill: #000;
+    -fx-text-fill: #000;
+}

@@ -1,0 +1,63 @@
+
+.scroll-bar {
+    -fx-background-color: #fff;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: linear-gradient(to right, #dfdfdf 0%, derive(#e8e8e8, 100%) 50%, #dfdfdf 100%);
+    -fx-border-width:0 1px;
+    -fx-border-color: #CFCFCF;
+    -fx-padding: 2px 1px;
+}
+
+/* 主滚动条**轨道** CSS类 */
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+}
+
+
+/**我们每次拖动的主滚动条** thumb ** CSS类（可移动）**/
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+
+    -fx-background-radius: 3px;
+
+    -fx-min-width: 20px;
+    -fx-pref-width: 20px;
+
+    -fx-border-width: 1px;
+    -fx-border-color: #a6a6a6;
+    -fx-border-radius: 3px;
+    -fx-background-color: linear-gradient(to right, #e5e5e5 0%, #d6d6d6 100%);
+
+}
+
+
+
+
+.scroll-bar > .increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets:  0;
+}
+
+.scroll-bar > .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-insets:  0;
+}
+
+
+.scroll-bar:vertical > .increment-button > .increment-arrow {
+    -fx-background-color: #000;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 5px;
+    -fx-shape: "M -3 0 L 0 4 L 3 0 z";
+
+}
+
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+    -fx-background-color: #000;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 5px;
+    -fx-shape: "M -3 0 L 0 -4 L 3 0 z";
+}
+

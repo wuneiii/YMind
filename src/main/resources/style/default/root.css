@@ -1,0 +1,15 @@
+.root {
+    /*顶部菜单背景色*/
+    -var-top-bgcollor: #f1f1f1;
+
+    -var-tab-bgcolor-select: #6FBD3F;
+    -var-tab-fontcolor-select: #fff;
+
+    -var-tab-bgcolor: #ccc;
+    -var-tab-fontcolor: #444;
+
+    /**
+    borderPane主要边框颜色
+     */
+    -var-main-border-color:#dcdcdc;
+}

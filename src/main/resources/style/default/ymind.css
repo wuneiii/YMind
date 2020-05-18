@@ -1,0 +1,66 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: "Heiti TC";
+    -fx-base: rgb(132, 145, 47);
+    -fx-background: rgb(225, 228, 203);
+    -fx-text-fill: #444;
+}
+
+
+.button {
+    -fx-background-color: #e9e9e9,
+    linear-gradient(to bottom, derive(#e8e8e8, 95%), derive(#e8e8e8, 10%));
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-font-size: 12px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ddd;
+}
+
+.button:hover {
+    -fx-background-color: #e9e9e9,
+    linear-gradient(to top, derive(#e8e8e8, 95%), derive(#e8e8e8, 10%));
+}
+
+.context-menu {
+    -fx-background-color: #eee;
+    -fx-text-fill: #444;
+    -fx-border-width: 1px;
+    -fx-border-color: #f1f1f1;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 0 5px 0;
+}
+
+.menu-item {
+    -fx-padding: 3px 50px 3px 20px;
+}
+
+.menu-item:focused {
+    -fx-text-fill: white;
+    -fx-background-color: #3385ff;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+/**
+以下为自定义控件
+ */
+.TopButtonBar {
+    -fx-background-color: -var-top-bgcollor;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: -var-main-border-color;
+    -fx-padding: 4px 4px;
+}
+
+.TopButtonBar .button {
+    -fx-padding: 6px 10px;
+}
+.TopButtonBar HBox{
+    -fx-spacing: 4px;
+}
+
+

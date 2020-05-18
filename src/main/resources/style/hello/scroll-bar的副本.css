@@ -1,0 +1,52 @@
+
+.scroll-bar{
+    -fx-border-width: 10px;
+    -fx-border-color: #CFCFCF;
+    -fx-background-color: #E8E8E8;
+    -fx-background-color: red;
+}
+
+/* 主滚动条**轨道** CSS类 */
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius:0em;
+    -fx-border-radius:2em;
+}
+
+/**滚动条的增量和减量按钮CSS类**/
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius:0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+/**滚动条的增量和减量按钮CSS类**/
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius:0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow
+{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+
+/**我们每次拖动的主滚动条** thumb ** CSS类（可移动）**/
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:derive（black,90％）;
+    -fx-background-insets:2,0,0;
+    -fx-background-radius:2em;
+
+}
